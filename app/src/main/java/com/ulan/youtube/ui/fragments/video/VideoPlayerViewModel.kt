@@ -14,12 +14,4 @@ class VideoPlayerViewModel(
 
     private var _liveData: LiveData<Resourse<BaseMainResponse<ItemPlayList>?>> = MutableLiveData()
     val liveData get() = _liveData
-
-
-    private val _isVideoLoaded = MutableLiveData(false)
-    val isVideoLoaded: LiveData<Boolean> get() = _isVideoLoaded
-
-    fun setVideoLoaded(loaded: Boolean) {
-        _isVideoLoaded.value = loaded
-    }
 }
